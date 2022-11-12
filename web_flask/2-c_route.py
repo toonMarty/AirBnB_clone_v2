@@ -38,9 +38,7 @@ def c(text):
     Returns:
         str: a string, c <text>
     """
-    if text.__contains__('_'):
-        text.replace('_', ' ')
-    return "C %s" % escape(text)
+    return "C %s" % escape(' '.join(text.split('_')))
 
 
 if __name__ == "__main__":
