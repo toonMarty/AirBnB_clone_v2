@@ -9,13 +9,13 @@ app = Flask(__name__)
 app.url_map.strict_slashes = False
 
 
-@app.route('/')
+@app.route("/")
 def hello():
     """
-        This function will return the string, Hello HBNB!
-            Returns:
-                    str: a string
-                        """
+    This function will return the string, Hello HBNB!
+        Returns:
+                str: a string
+    """
     return "Hello HBNB!"
 
 
